@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./listofstudent.html">LIST OF STUDENTS</a>
+            </li>
+            
+          </ul>
+        </div>
+ 
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </nav>
+      <div id="div1"></div>
+      <section class="body" style="padding: 20px; display: flex; flex-wrap: wrap;">
+
+        <div class="card" id="elementone" style="width: 18rem; margin:10px;">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body" id="myUL">
+              <h5 style="display: inline;" class="card-title" id="namestudent">Card title </h5><span onclick="sHOWNAME()">&#9998;</span>
+              <div id=uPDATENAME style="display: none;">  
+                <input type="text" id="iNPUTNAME" placeholder="insert...">
+                  <span onclick="uPDATENAME()">Update</span>
+                </div>
+                <br>
+              
+              <p style="display: inline;" class="card-text" id="email">loading...</p>
+              <span onclick="sHOWEMAIL()">&#9998;</span>
+              <div id=uPDATEEMAIL style="display: none;">  
+                <input type="text" id="iNPUTEMAIL" placeholder="insert...">
+                  <span onclick="uPDATEEMAIL()">Update</span>
+                </div>
+                <br>
+                <p style="display: inline;" class="card-text" id="phone">loading...</p>
+                <span onclick="sHOWPHONE()">&#9998;</span>
+                <div id=uPDATEPHONE style="display: none;">  
+                  <input type="text" id="iNPUTPHONE" placeholder="insert...">
+                    <span onclick="uPDATEPHONE()">Update</span>
+                  </div>
+                  <br>
+                  <p style="display: inline;" class="card-text" id="faculty">loading...</p>
+                  <span onclick="sHOWFACULTY()">&#9998;</span>
+                  <div id=uPDATEFACULTY style="display: none;">  
+                    <input type="text" id="iNPUTFACULTY" placeholder="insert...">
+                      <span onclick="uPDATEFACULTY()">Update</span>
+                    </div>
+                </div>
+              <button onclick="showinput()">add data</button>
+              <div id=inputdata style="display: none;">  
+              <input type="text" id="myInput" placeholder="Title...">
+                <span onclick="newElement()" class="addBtn">Add</span>
+              </div>
+              <input type="button" value="DELETE" onclick="removeDummy()" />
+           
+          </div>
+          <div class="card" id="elementone" style="width: 18rem; margin:10px;">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body" id="myUL">
+              <h5 style="display: inline;" class="card-title" id="namestudent1">Card title </h5><span onclick="sHOWNAME1()">&#9998;</span>
+              <div id=uPDATENAME1 style="display: none;">  
+                <input type="text" id="iNPUTNAME1" placeholder="insert...">
+                  <span onclick="uPDATENAME1()">Update</span>
+                </div>
+                <br>
+              
+              <p style="display: inline;" class="card-text" id="email1">loading...</p>
+              <span onclick="sHOWEMAIL()">&#9998;</span>
+              <div id=uPDATEEMAIL style="display: none;">  
+                <input type="text" id="iNPUTEMAIL" placeholder="insert...">
+                  <span onclick="uPDATEEMAIL()">Update</span>
+                </div>
+                <br>
+                <p style="display: inline;" class="card-text" id="phone1">loading...</p>
+                <span onclick="sHOWPHONE()">&#9998;</span>
+                <div id=uPDATEPHONE style="display: none;">  
+                  <input type="text" id="iNPUTPHONE" placeholder="insert...">
+                    <span onclick="uPDATEPHONE()">Update</span>
+                  </div>
+                  <br>
+                  <p style="display: inline;" class="card-text" id="faculty1">loading...</p>
+                  <span onclick="sHOWFACULTY()">&#9998;</span>
+                  <div id=uPDATEFACULTY style="display: none;">  
+                    <input type="text" id="iNPUTFACULTY" placeholder="insert...">
+                      <span onclick="uPDATEFACULTY()">Update</span>
+                    </div>
+                </div>
+              <button onclick="showinput()">add data</button>
+              <div id=inputdata style="display: none;">  
+              <input type="text" id="myInput" placeholder="Title...">
+                <span onclick="newElement()" class="addBtn">Add</span>
+              </div>
+              <input type="button" value="DELETE" onclick="removeDummy()" />
+           
+          </div>
+           <div class="card" style="width: 18rem;; margin:10px">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+              <h5 class="card-title" id="namestudent1">Card title</h5>
+              <p class="card-text" id="email1">loading...</p>
+              <p class="card-text" id="phone1">loading...</p>
+              <p class="card-text" id="major1">loading...</p>
+
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;; margin:10px">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+              <h5 class="card-title" id="namestudent2">Card title</h5>
+              <p class="card-text" id="email2">loading...</p>
+              <p class="card-text" id="phone2">loading...</p>
+              <p class="card-text" id="major2">loading...</p>
+
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; margin:10px;">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+              <h5 class="card-title" id="namestudent3">Card title</h5>
+              <p class="card-text" id="email3">loading...</p>
+              <p class="card-text" id="phone3">loading...</p>
+              <p class="card-text" id="major3">loading...</p>
+
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; margin:10px;">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+              <h5 class="card-title" id="namestudent4">Card title</h5>
+              <p class="card-text" id="email4">loading...</p>
+              <p class="card-text" id="phone4">loading...</p>
+              <p class="card-text" id="major4">loading...</p>
+
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+      </section>
+     
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+
+  </body>
+</html>
