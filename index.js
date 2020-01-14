@@ -139,11 +139,17 @@ document.getElementById("email4").innerHTML = aKlAA.email;
 
 
 
-function removeDummy() {
+function elementone() {
     var elem = document.getElementById('elementone');
     elem.parentNode.removeChild(elem);
     return false;
 }
+function elementtwo() {
+    var elem = document.getElementById('elementtwo');
+    elem.parentNode.removeChild(elem);
+    return false;
+}
+
 
 function newElement() {
 
@@ -172,6 +178,7 @@ function newElement() {
     }
   }
   
+
   function sHOWNAME() {
     var x = document.getElementById("uPDATENAME");
     if (x.style.display === "none") {
@@ -180,14 +187,13 @@ function newElement() {
       x.style.display = "none";
     }
   }
-
   function uPDATENAME() {
-          var inputValue = document.getElementById("iNPUTNAME").value;
-
+    var inputValue = document.getElementById("iNPUTNAME").value;
     document.getElementById("namestudent").innerHTML = inputValue;
     sHOWNAME()
   }
-  
+
+
   function sHOWNAME1() {
     var x = document.getElementById("uPDATENAME1");
     if (x.style.display === "none") {
@@ -196,14 +202,58 @@ function newElement() {
       x.style.display = "none";
     }
   }
-
   function uPDATENAME1() {
-          var inputValue = document.getElementById("iNPUTNAME1").value;
-
+    var inputValue = document.getElementById("iNPUTNAME1").value;
     document.getElementById("namestudent1").innerHTML = inputValue;
     sHOWNAME1()
   }
-  
+
+
+  function sHOWNAME2() {
+    var x = document.getElementById("uPDATENAME2");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function uPDATENAME2() {
+    var inputValue = document.getElementById("iNPUTNAME2").value;
+    document.getElementById("namestudent2").innerHTML = inputValue;
+    sHOWNAME2()
+  }
+
+
+  function sHOWNAME3() {
+    var x = document.getElementById("uPDATENAME3");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function uPDATENAME3() {
+    var inputValue = document.getElementById("iNPUTNAME3").value;
+    document.getElementById("namestudent3").innerHTML = inputValue;
+    sHOWNAME3()
+  }
+
+
+  function sHOWNAME4() {
+    var x = document.getElementById("uPDATENAME4");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function uPDATENAME4() {
+    var inputValue = document.getElementById("iNPUTNAME4").value;
+    document.getElementById("namestudent4").innerHTML = inputValue;
+    sHOWNAME4()
+  }
+
+
   function sHOWEMAIL() {
     var x = document.getElementById("uPDATEEMAIL");
     if (x.style.display === "none") {
@@ -212,16 +262,29 @@ function newElement() {
       x.style.display = "none";
     }
   }
-
   function uPDATEEMAIL() {
-          var inputValue = document.getElementById("iNPUTEMAIL").value;
-
+    var inputValue = document.getElementById("iNPUTEMAIL").value;
     document.getElementById("email").innerHTML = inputValue;
     sHOWEMAIL()
   }
 
-  function sHOWPHONE() {
-    var x = document.getElementById("uPDATEPHONE");
+
+  function sHOWEMAIL1() {
+    var x = document.getElementById("uPDATEEMAIL1");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  function uPDATEEMAIL1() {
+    var inputValue = document.getElementById("iNPUTEMAIL1").value;
+    document.getElementById("email1").innerHTML = inputValue;
+    sHOWEMAIL1()
+  }
+
+  function sHOWPHONE1() {
+    var x = document.getElementById("uPDATEPHONE1");
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {
@@ -229,11 +292,11 @@ function newElement() {
     }
   }
 
-  function uPDATEPHONE() {
-          var inputValue = document.getElementById("iNPUTPHONE").value;
+  function uPDATEPHONE1() {
+          var inputValue = document.getElementById("iNPUTPHONE1").value;
 
-    document.getElementById("phone").innerHTML = inputValue;
-    sHOWPHONE()
+    document.getElementById("phone1").innerHTML = inputValue;
+    sHOWPHONE1()
   }
   function sHOWFACULTY() {
     var x = document.getElementById("uPDATEFACULTY");
